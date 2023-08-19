@@ -29,7 +29,7 @@ public class Main {
         float maior = num[0];
         float menor = num[0];
         float soma = num[0];
-        float valoresArray = 0;
+        String resultado = "Resultado " + num[0] + "\n";
         for (int i = 0; i < 10; i++) {
             System.out.println("Digite o numero" + (i + 1));
             num[i] = sc.nextFloat();
@@ -37,7 +37,6 @@ public class Main {
 
         for (int i = 1; i < 10; i++) {
 
-            valoresArray = num[i];
             if (num[i] > maior) {
                 maior = num[i];
             }
@@ -45,13 +44,14 @@ public class Main {
                 menor = num[i];
             }
             soma += num[i];
+            resultado += num[i] + "\n";
         }
         float media = soma / 10;
         System.out.println("O maior numero é" + maior);
         System.out.println("O menor numero é" + menor);
         System.out.println("A soma é" + soma);
         System.out.println("A media é" + media);
-        System.out.println("O vetor é" + valoresArray);
+        System.out.println("O vetor é" + resultado);
 
     }
 }
