@@ -29,14 +29,15 @@ public class Main {
         float maior = num[0];
         float menor = num[0];
         float soma = num[0];
-
+        float valoresArray = 0;
         for (int i = 0; i < 10; i++) {
-
             System.out.println("Digite o numero" + (i + 1));
-            float vlr = sc.nextFloat();
+            num[i] = sc.nextFloat();
+        }
 
-            num[i] = vlr;
+        for (int i = 1; i < 10; i++) {
 
+            valoresArray = num[i];
             if (num[i] > maior) {
                 maior = num[i];
             }
@@ -50,6 +51,7 @@ public class Main {
         System.out.println("O menor numero é" + menor);
         System.out.println("A soma é" + soma);
         System.out.println("A media é" + media);
+        System.out.println("O vetor é" + valoresArray);
 
     }
 }
