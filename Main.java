@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-    //ola mundo
     public static void main(String[] args) {
         
         float num[] = new float[10];
